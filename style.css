@@ -1,0 +1,23 @@
+/* General styles */
+:root {
+    --primary: #12141D;
+    --secondary: #043A53;
+}
+
+body {
+    margin: 0;
+    font-family: "lato";
+}
+
+.blue-button {
+    padding: 19px 36px;
+    border-radius: 55px;
+    background-color: var(--secondary);
+    box-shadow: 0px 23px 47px 0px #043A533D;
+    color: #fff;
+    font-size: 18px;
+    line-height: 28;
+    text-decoration: none;
+}
+
+
