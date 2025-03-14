@@ -9,15 +9,125 @@ body {
     font-family: "lato";
 }
 
+a { text-decoration: none }
+
+ul {
+    padding: 0;
+    margin: 0;
+}
+
 .blue-button {
-    padding: 19px 36px;
     border-radius: 55px;
     background-color: var(--secondary);
-    box-shadow: 0px 23px 47px 0px #043A533D;
     color: #fff;
-    font-size: 18px;
-    line-height: 28;
-    text-decoration: none;
+}
+
+.blue-button:hover {
+    background-color: #fff;
+    color: var(--secondary);
+}
+
+.white-btn {
+    border-radius: 42px;
+    background-color: #fff;
+    color: var(--primary);
+}
+
+.white-btn:hover {
+    background-color: var(--primary);
+    color: #fff;
+}
+
+.text-center { text-align: center }
+
+/* header styles */
+header { 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #F2F5F6;
+}
+
+h1 { margin: 0 }
+header { padding: 24px 20px }
+header ul li { display: inline-block }
+nav li { margin-right: 40px }
+nav li:last-of-type { margin-right: 0 }
+
+nav li a { 
+    color: var(--primary);
+    font-weight: 700;
+}
+
+nav li a:hover { 
+    color: var(--secondary);
+    text-decoration: underline;
+}
+
+nav li a.active { color: var(--secondary)}
+
+.login-signup-buttons a {
+    padding: 15px 21px;
+    display: inline-block;
+}
+
+.login-signup-buttons li:first-of-type { margin-right: 10px }
+
+/* banner styles */
+.banner {
+    padding: 180px 160px;
+    display: flex;
+    background: #F2F5F6;
+}
+
+.banner h2 {
+    margin: 0;
+    color: var(--secondary);
+    font-size: 64px;
+    font-weight: 800;
+}
+
+.banner h2 span { display: block }
+
+.banner p {
+    padding: 0 10px;
+    margin: 0;
+    color: var(--primary);
+    font-size: 20px;
+}
+
+.banner-buttons { 
+    margin-top: 32px;
+    display: flex;
+    justify-content: center;
+}
+
+.banner-buttons div {
+    padding: 0 24px;
+    margin-left: 32px;
+    display: flex;
+    align-items: center;
+}
+
+.banner a.blue-button {
+    padding: 20px 30px;
+    display: inline-block;
+    box-shadow: 0px 23px 47px 0px #043A533D;
 }
 
 
+.banner-buttons div img {
+    padding: 10px;
+    border-radius: 55px;
+    margin-right: 16px;
+    background-color: var(--secondary);
+    color: #fff;
+}
+
+.check-video-button {
+    color: var(--secondary);
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.check-video-button:hover { text-decoration: underline }
