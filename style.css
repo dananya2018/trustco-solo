@@ -14,6 +14,7 @@ a { text-decoration: none }
 ul {
     padding: 0;
     margin: 0;
+		list-style: none;
 }
 
 .blue-button {
@@ -38,7 +39,13 @@ ul {
     color: #fff;
 }
 
+.wrapper { padding: 0 10% }
 .text-center { text-align: center }
+
+/* media queries for general css */
+@media only screen and (max-width: 768px) {
+	.wrapper { padding: 20px }
+}
 
 /* header styles */
 header { 
@@ -193,7 +200,11 @@ nav li a.active { color: var(--secondary)}
 @media only screen and (max-width: 768px) {
 	.banner { padding: 40px 10% }
 	.banner h2 { font-size: 36px }
-	.banner p { font-size: 14px }
+	
+	.banner p { 
+		margin-top: 16px;
+		font-size: 14px 
+	}
 
 	.banner-buttons {
 		flex-direction: column;
@@ -205,4 +216,22 @@ nav li a.active { color: var(--secondary)}
 
 @media only screen and (max-width: 515px) {
 	.banner { padding: 40px 0 }
+}
+
+/* styles for trusted brand */
+.trusted-brand { margin: 50px 0 30px }
+
+.trusted-brand, .trusted-brand ul { 
+	display: flex;
+	align-items: center;
+}
+
+.trusted-brand ul { 
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+.trusted-brand ul li {
+	margin-bottom: 20px; 
+	margin-left: 64px; 
 }
