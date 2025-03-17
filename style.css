@@ -173,3 +173,36 @@ nav li a.active { color: var(--secondary)}
 .check-video-button:hover { text-decoration: underline }
 
 /* responsive styles for banner */
+@media only screen and (max-width: 1200px) {
+	.banner { padding: 100px 10% }
+	.banner h2 { font-size: 54px }
+}
+
+@media only screen and (max-width: 992px) {
+	.banner { 
+		justify-content: center;
+		flex-wrap: wrap;
+	}
+
+	.banner .text-center {
+		margin-bottom: 60px; 
+		order: -1; 
+	}
+}
+
+@media only screen and (max-width: 768px) {
+	.banner { padding: 40px 10% }
+	.banner h2 { font-size: 36px }
+	.banner p { font-size: 14px }
+
+	.banner-buttons {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.banner-buttons div { margin: 32px 0 0 }
+}
+
+@media only screen and (max-width: 515px) {
+	.banner { padding: 40px 0 }
+}
