@@ -1,43 +1,43 @@
 /* General styles */
 :root {
-    --primary: #12141D;
-    --secondary: #043A53;
+	--primary: #12141D;
+	--secondary: #043A53;
 }
 
 body {
-    margin: 0;
-    font-family: "lato";
+	margin: 0;
+	font-family: "lato";
 }
 
 a { text-decoration: none }
 h1, h2, h3, h4, h5, h6, p { margin: 0 }
 
 ul {
-    padding: 0;
-    margin: 0;
-		list-style: none;
+	padding: 0;
+	margin: 0;
+	list-style: none;
 }
 
 .blue-bg {
-    border-radius: 55px;
-    background-color: var(--secondary);
-    color: #fff;
+	border-radius: 55px;
+	background-color: var(--secondary);
+	color: #fff;
 }
 
 .blue-bg:hover {
-    background-color: #fff;
-    color: var(--secondary);
+	background-color: #fff;
+	color: var(--secondary);
 }
 
 .white-btn {
-    border-radius: 42px;
-    background-color: #fff;
-    color: var(--primary);
+	border-radius: 42px;
+	background-color: #fff;
+	color: var(--primary);
 }
 
 .white-btn:hover {
-    background-color: var(--primary);
-    color: #fff;
+	background-color: var(--primary);
+	color: #fff;
 }
 
 .wrapper { padding: 0 10% }
@@ -50,14 +50,14 @@ ul {
 
 /* header styles */
 header { 
-    padding: 34px 20px;
-    background: #F2F5F6 
+	padding: 34px 20px;
+	background: #F2F5F6;
 }
 
 .desktop-nav {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
 }
 
 header h1 { line-height: 0 }
@@ -66,42 +66,42 @@ nav li { margin-right: 40px }
 nav li:last-of-type { margin-right: 0 }
 
 nav li a { 
-    color: var(--primary);
-    font-weight: 700;
+	color: var(--primary);
+	font-weight: 700;
 }
 
 nav li a:hover { 
-    color: var(--secondary);
-    text-decoration: underline;
+	color: var(--secondary);
+	text-decoration: underline;
 }
 
 nav li a.active { color: var(--secondary)}
 
 .login-signup-buttons a {
-    padding: 15px 21px;
-    display: inline-block;
+	padding: 15px 21px;
+	display: inline-block;
 }
 
 .login-signup-buttons li:first-of-type { margin-right: 10px }
 
 .hamburger-icon { 
-    display: none;
-    position: absolute;
-    top: 35px;
-    right: 20px;
-    cursor: pointer; 
+	display: none;
+	position: absolute;
+	top: 35px;
+	right: 20px;
+	cursor: pointer; 
 }
 
 .hamburger-menues { display: none }
 
 .hamburger-menues ul:first-of-type {
-    display: flex;
-    flex-direction: column;
+	display: flex;
+	flex-direction: column;
 }
 
 .hamburger-menues ul:first-of-type li { 
-    padding: 5px;  
-    margin-bottom: 10px 
+	padding: 5px;  
+	margin-bottom: 10px 
 }
 
 .hamburger-menues ul:first-of-type li:hover { background-color: var(--secondary) }
@@ -110,17 +110,17 @@ nav li a.active { color: var(--secondary)}
 
 /* responsive styles for header */
 @media only screen and (max-width: 992px) {
-    header {
-        padding: 17px 20px; 
-        background-color: #fff 
-    }
+	header {
+		padding: 17px 20px; 
+		background-color: #fff 
+	}
 	
-    nav, nav + .login-signup-buttons { display: none }
+  nav, nav + .login-signup-buttons { display: none }
 
 	.hamburger-icon { 
-        display: block;
-        top: 25px; 
-    }
+		display: block;
+		top: 25px; 
+  }
 
 	.hamburger-menues {
 		display: none;
@@ -410,13 +410,13 @@ nav li a.active { color: var(--secondary)}
 }
 
 @media only screen and (max-width: 1145px) {
-.benefits { 
-	justify-content: center;
-	flex-wrap: wrap ;
-}
+	.benefits { 
+		justify-content: center;
+		flex-wrap: wrap ;
+	}
 
-.benefits div { text-align: center }
-.card-group { margin: 32px 0 0 }
+	.benefits div { text-align: center }
+	.card-group { margin: 32px 0 0 }
 }
 
 @media only screen and (max-width: 768px) {
@@ -428,24 +428,97 @@ nav li a.active { color: var(--secondary)}
 }
 
 @media only screen and (max-width: 576px) {
-.benefits div span {
-	padding: 6px 16px;
-	font-size: 14px;
-	line-height: 20px;
+	.benefits div span {
+		padding: 6px 16px;
+		font-size: 14px;
+		line-height: 20px;
+	}
+
+	.benefits div h3 { 
+		font-size: 30px;
+		line-height: 38px;
+	}
+
+	.benefits div p { 
+		font-size: 14px;
+		line-height: 20px;
+	}
+
+	.card h4 {
+		font-size: 20px;
+		line-height: 30px;
+	}
 }
 
-.benefits div h3 { 
-	font-size: 30px;
-	line-height: 38px;
+/* Building Bridge Styles */
+.building-bridge {
+	display: flex;
 }
 
-.benefits div p { 
-	font-size: 14px;
-	line-height: 20px;
+.building-bridge-img-content {
+	position: relative;
 }
 
-.card h4 {
+.building-bridge-img-content div {
+	width: 229px;
+	height: 229px;
+	border: 4px solid #fff;
+	border-radius: 50%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	position: absolute;
+	right: -90px;
+	bottom: 55px;
+	box-shadow: 10px 13px 30px 0px #043A533D;
+}
+
+.building-bridge-img-content .blue-bg:hover { 
+	background-color: var(--secondary);
+	color: #fff;
+}
+
+.building-bridge-img-content div h4 {
+	margin-top: 16px;
+	font-size: 48px;
+	font-weight: 700;
+	line-height: 60px;
+}
+
+.building-bridge-img-content div span { display: block }
+.building-bridge-text-content { margin: 133px 135px }
+
+.building-bridge-text-content h3 {
+	color: var(--primary);
+	font-size: 60px;
+	font-weight: 700;
+	line-height: 72px;
+}
+
+.building-bridge-text-content span { color: #92A7B0 }
+
+.building-bridge-text-content p {
+	margin: 32px 0;
+	color: var(--primary);
 	font-size: 20px;
 	line-height: 30px;
 }
+
+.building-bridge-text-content a {
+	padding: 16px 16px 16px 24px;
+	border: 1px solid transparent;
+	display: inline-block;
+	font-size: 18px;
+	font-weight: 700;
+	line-height: 28px;
 }
+
+.building-bridge-text-content a img {
+	padding-left: 25px;
+	vertical-align: middle;
+}
+
+.building-bridge-text-content a:hover { border: 1px solid var(--secondary) }
+.building-bridge-text-content a:hover img { background-color: #fff }
+
