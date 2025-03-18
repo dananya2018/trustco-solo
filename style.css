@@ -368,7 +368,7 @@ nav li a.active { color: var(--secondary)}
 
 .card {
 	box-sizing: border-box;
-	width: 262px;
+	width: 100%;
 	padding: 32px 24px;
 	border-radius: 16px;
 	margin-right: 16px;
@@ -378,7 +378,7 @@ nav li a.active { color: var(--secondary)}
 .card:last-of-type { margin-right: 0 }
 
 .card h4 {
-	margin: 32px 10px;
+	margin: 32px 0 10px;
 	color: var(--primary);
 	font-size: 24px;
 	font-weight: 700;
@@ -389,4 +389,45 @@ nav li a.active { color: var(--secondary)}
 	color: #404040;
 	font-size: 18px;
 	line-height: 28px;
+}
+
+@media only screen and (max-width: 1145px) {
+.benefits { 
+	justify-content: center;
+	flex-wrap: wrap ;
+}
+
+.benefits div { text-align: center }
+.card-group { margin: 32px 0 0 }
+}
+
+@media only screen and (max-width: 768px) {
+	.benefits { margin: 50px 0 }
+	.benefits div h3 { margin: 16px 0 }
+	.card-group { flex-wrap: wrap }
+	.card { margin: 16px 0 0 }
+	.card:first-of-type { margin-top: 0 }
+}
+
+@media only screen and (max-width: 576px) {
+.benefits div span {
+	padding: 6px 16px;
+	font-size: 14px;
+	line-height: 20px;
+}
+
+.benefits div h3 { 
+	font-size: 30px;
+	line-height: 38px;
+}
+
+.benefits div p { 
+	font-size: 14px;
+	line-height: 20px;
+}
+
+.card h4 {
+	font-size: 20px;
+	line-height: 30px;
+}
 }
