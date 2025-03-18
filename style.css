@@ -453,11 +453,10 @@ nav li a.active { color: var(--secondary)}
 /* Building Bridge Styles */
 .building-bridge {
 	display: flex;
+	align-items: flex-start;
 }
 
-.building-bridge-img-content {
-	position: relative;
-}
+.building-bridge-img-content { position: relative }
 
 .building-bridge-img-content div {
 	width: 229px;
@@ -521,4 +520,25 @@ nav li a.active { color: var(--secondary)}
 
 .building-bridge-text-content a:hover { border: 1px solid var(--secondary) }
 .building-bridge-text-content a:hover img { background-color: #fff }
+
+/* Responsive styles for building bridge section */
+@media only screen and (max-width: 1399px) {
+	.building-bridge-text-content { margin: 133px 20px 133px 100px }
+}
+
+@media only screen and (max-width: 1200px) {
+	.building-bridge { flex-direction: column-reverse }
+
+	.building-bridge-img-content {
+		margin-top: 32px;
+    left: 50%;
+		text-align: center;
+		transform: translateX(-50%);
+	}
+
+	.building-bridge-text-content {
+		margin: 0 50px;
+    text-align: center;
+	}
+}
 
