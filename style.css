@@ -44,7 +44,7 @@ ul {
 
 /* media queries for general css */
 @media only screen and (max-width: 768px) {
-	.wrapper { padding: 20px }
+	.wrapper { padding: 0 20px }
 }
 
 /* header styles */
@@ -219,7 +219,7 @@ nav li a.active { color: var(--secondary)}
 }
 
 /* styles for trusted brand */
-.trusted-brand { margin: 50px 0 30px }
+.trusted-brand { margin: 50px 0 50px }
 
 .trusted-brand, .trusted-brand ul { 
 	display: flex;
@@ -306,4 +306,34 @@ nav li a.active { color: var(--secondary)}
 	background-color: #fff;
 	cursor: pointer;
 	transform: translate(-50%, -50%);
+}
+
+/* responsive styles for video section  */
+@media only screen and (max-width: 992px) { 
+	.video-thumbnail-text-content { flex-direction: column }
+	.video-thumbnail-text-content h3, .video-thumbnail-text-content p { max-width: 100% }
+	.video-thumbnail-text-content p { margin-top: 16px }
+	.video-play-icon { padding: 23px 26px }
+	.video-play-icon img { width: 20px }
+}
+
+@media only screen and (max-width: 576px) { 
+	.video-thumbnail { padding-top: 50px }
+
+	.video-thumbnail-text-content h3 { 
+		font-size: 30px;
+		line-height: 38px; 
+	}
+
+	.video-thumbnail-text-content h3 span { display: inline-block }
+
+	.video-thumbnail-text-content p {
+		padding-left: 0; 
+		font-size: 14px;
+		line-height: 20px;
+	}
+
+	.video-thumbnail-text-content { margin-bottom: 32px }
+	.video-play-icon { padding: 8px 12px }
+	.video-play-icon img { width: 10px }
 }
