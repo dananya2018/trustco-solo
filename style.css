@@ -526,6 +526,10 @@ nav li a.active { color: var(--secondary)}
 	.building-bridge-text-content { margin: 133px 20px 133px 100px }
 }
 
+@media only screen and (max-width: 1283px) {
+	.building-bridge-text-content { margin: 80px 20px 80px 100px }
+ }
+
 @media only screen and (max-width: 1200px) {
 	.building-bridge { flex-direction: column-reverse }
 
