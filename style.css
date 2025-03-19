@@ -610,3 +610,31 @@ nav li a.active { color: var(--secondary)}
 	font-weight: 700;
 	line-height: 32px;
 }
+
+/* Responsive styles for numbers section */
+@media only screen and (max-width: 1076px) {
+	.number { margin: 68px 0 }
+	.number ul { justify-content: center }
+	.number li { margin: 32px 16px 0 0 }
+}
+
+@media only screen and (max-width: 576px) {
+	.number { margin: 18px 0 }
+
+	.number li {
+		width: 158px;
+		margin-right: 0;
+	}
+
+	.number h3 {
+		font-size: 36px;
+		line-height: 44px;
+	}
+
+	.number span {
+		font-size: 16px;
+		font-weight: 400;
+		line-height: 24px;
+	}
+
+}
