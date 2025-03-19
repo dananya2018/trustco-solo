@@ -542,3 +542,40 @@ nav li a.active { color: var(--secondary)}
 	}
 }
 
+@media only screen and (max-width: 767px) {
+	.building-bridge-img-content { width: 321px }
+	.building-bridge-img-content img { width: 100% }
+
+	.building-bridge-img-content .blue-bg {
+		width: 149px;
+		height: 149px;
+		right: -40px;
+		bottom: 27px;
+	}
+
+	.building-bridge-img-content .blue-bg img { width: 32px }
+
+	.building-bridge-img-content .blue-bg h4 {
+		margin-top: 5px;
+		font-size: 36px;
+		line-height: 44px;
+	}
+	.building-bridge-img-content .blue-bg span {
+		font-size: 14px;
+		line-height: 20px;
+	}
+
+	.building-bridge-text-content h3 {
+		font-size: 30px;
+		line-height: 38px;
+	}
+
+	.building-bridge-text-content p {
+		margin: 16px 0;
+		font-size: 14px;
+		line-height: 20px;
+	}
+
+	.building-bridge-text-content a { padding: 16px 13px 16px 22px }
+ }
+
