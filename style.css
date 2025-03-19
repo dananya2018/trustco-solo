@@ -583,3 +583,30 @@ nav li a.active { color: var(--secondary)}
 	.building-bridge-text-content a { padding: 16px 13px 16px 22px }
  }
 
+ /* Number section styles */
+ .number { margin: 100px 0 }
+
+.number ul { 
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	text-align: center;
+}
+
+.number li {  margin-right: 64px }
+
+.number h3 {
+	color: var(--secondary);
+	margin-bottom: 16px;
+	font-size: 60px;
+	font-weight: 700;
+	line-height: 72px;
+}
+
+.number span {
+	color: #404040;
+	font-size: 24px;
+	font-weight: 700;
+	line-height: 32px;
+}
