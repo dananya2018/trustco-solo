@@ -1207,7 +1207,7 @@ footer p {
 }
 
 @media only screen and (max-width: 998px) {
-	footer { flex-direction: column }
+	.primary-footer { flex-direction: column }
 	.footer-logo-container { text-align: center }
 	.footer-logo-container ul { margin-top: 30px }
 	.social-icons-container { justify-content: center }
@@ -1258,3 +1258,11 @@ footer p {
 }
 
 .site-credits img { vertical-align: middle }
+
+@media only screen and (max-width: 768px) {
+	.site-credits {
+		flex-direction: column;
+	}
+
+	.site-credits ul { margin: 32px 0 }
+}
