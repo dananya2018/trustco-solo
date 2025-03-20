@@ -1162,12 +1162,14 @@ footer {
 	display: flex;
 }
 
+.footer-logo-container ul { margin-top: 50px }
+
 .social-icons-container { display: flex }
 
 .social-icons-container li {
 	padding: 6px 8px;
 	border-radius: 50%;
-	margin: 50px 16px 0 0;
+	margin-right: 16px;
 	background-color: #D7E0E5;
 }
 
@@ -1198,4 +1200,35 @@ footer p {
 	color: #404040;
 	font-size: 18px;
 	line-height: 28px;
+}
+
+@media only screen and (max-width: 998px) {
+	footer { flex-direction: column }
+	.footer-logo-container { text-align: center }
+	.footer-logo-container ul { margin-top: 30px }
+	.social-icons-container { justify-content: center }
+
+	footer p { 
+		margin: 30px 0;
+		text-align: center;
+	}
+}
+
+@media only screen and (max-width: 576px) {
+	footer p {
+		margin: 24px 0;
+		font-size: 16px;
+		line-height: 24px;
+	}
+
+	.footer-links h5 {
+		margin-bottom: 16px;
+		font-size: 18px;
+		line-height: 28px;
+	}
+
+	.footer-links li a {
+		font-size: 16px;
+		line-height: 24px;
+	}
 }
