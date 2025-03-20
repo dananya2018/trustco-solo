@@ -1046,3 +1046,44 @@ nav li a.active { color: var(--secondary)}
 	.whats-new .card { width: 288px }
 	.whats-new .card > img { width: 100% }
 }
+
+/* CTA Banner styles */
+.cta-banner {
+	padding: 104px 0 104px 150px;
+	background-image: url(./images/star-icon-blue.png) ,url(./images/girl.png), url(./images/search-icon-yellow.png), url(./images/crown-icon-black.png);
+	background-color: var(--primary);
+    background-repeat: no-repeat;    
+    background-position: 85% 100%, 90% 50%, 97% 100%, 48% 100%;
+	color: #fff;
+}
+
+.cta-banner h3 { text-transform: capitalize }
+.cta-banner h3 span { display: block }
+
+.cta-banner a {
+	padding: 21px 10px 21px 24px;
+	border-radius: 55px;
+	margin: 50px 0 24px;
+	display: inline-block;
+	background-color: #F0B73F;
+	color: #fff;
+	font-size: 18px;
+	font-weight: 700;
+	line-height: 28px;
+}
+
+.cta-banner a:hover {
+	background-color: #fff;
+	color: #F0B73F;
+}
+
+.cta-banner a img { 
+	margin-left: 25px;
+	vertical-align: middle;
+}
+
+.cta-banner > span {
+	display: block;
+	font-size: 20px;
+	line-height: 30px;
+}
