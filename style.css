@@ -776,19 +776,17 @@ nav li a.active { color: var(--secondary)}
 
  /* Testimonial styles */
  .testimonial {
-	padding: 100px 150px;
+	padding: 100px 10%;
+	position: relative;
 	background-color: #F2F5F6;
  }
 
  .testimonial h3 { color: var(--primary) }
 
- .heading-and-sell-all-section { 
-	display: flex; 
-	align-items: center;
-	justify-content: space-between;
-}
-
  .heading-and-sell-all-section a {
+	position: absolute;
+	top: 125px;
+	right: 10%;
 	color: var(--primary);
 	font-size: 18px;
 	font-weight: 700;
@@ -844,7 +842,12 @@ nav li a.active { color: var(--secondary)}
 	line-height: 24px;
  }
 
- .pagination { text-align: center }
+ .pagination { 
+	position: absolute;
+	bottom: 100px;
+	left: 50%;
+	transform: translateX(-50%); 
+}
 
  .pagination span {
 	width: 20px;
@@ -857,4 +860,62 @@ nav li a.active { color: var(--secondary)}
  .pagination span:nth-child(2) {
 	width: 80px;
 	background-color: var(--secondary);
+ }
+
+ @media only screen and (max-width: 1200px) {
+	.testimonial h3 { 
+		font-size: 45px; 
+		line-height: 60px;
+	}
+	.heading-and-sell-all-section a { top: 119px }
+ }
+
+ @media only screen and (max-width: 918px) {
+	.testimonial h3 { 
+		font-size: 40px; 
+		line-height: 50px;
+	}
+	.heading-and-sell-all-section a { top: 114px }
+ }
+
+	@media only screen and (max-width: 768px) {
+		.testimonial h3 { 
+			font-size: 30px; 
+			line-height: 38px;
+		}
+
+		.heading-and-sell-all-section { text-align: center }
+
+		.heading-and-sell-all-section a {
+			top: 84%;
+			left: 50%;
+			transform: translateX(-50%);
+		}
+
+		.testimonial .card p {
+			font-size: 16px;
+			line-height: 24px;
+		}
+
+		.customer-details h5 {
+			font-size: 14px;
+			line-height: 20px;
+		}
+
+		.customer-details span {
+			font-size: 12px;
+			line-height: 18px;
+		}
+
+		.testimonial .card-group { overflow: scroll }
+
+		.pagination {
+			top: 170px;
+			left: 50%;
+			transform: translateX(-50%);
+		}
+ }
+
+ @media only screen and (max-width: 456px) {
+	.pagination { top: 200px }
  }
