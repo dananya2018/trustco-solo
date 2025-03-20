@@ -1050,6 +1050,7 @@ nav li a.active { color: var(--secondary)}
 /* CTA Banner styles */
 .cta-banner {
 	padding: 104px 0 104px 150px;
+	position: relative;
 	background-image: url(./images/star-icon-blue.png) ,url(./images/girl.png), url(./images/search-icon-yellow.png), url(./images/crown-icon-black.png);
 	background-color: var(--primary);
     background-repeat: no-repeat;    
@@ -1086,4 +1087,71 @@ nav li a.active { color: var(--secondary)}
 	display: block;
 	font-size: 20px;
 	line-height: 30px;
+}
+
+.mobile-view-section {
+	padding-right: 30px; 
+	display: none;
+	text-align: right; 
+}
+
+.crown-icon, .star-icon, .search-icon {
+	position: absolute;
+	bottom: 0;
+}
+
+.girl-img {
+	position: relative;
+	z-index: 2;
+}
+
+.search-icon {
+	right: 0;
+	z-index: 1;
+}
+
+.crown-icon { right: 270px }
+
+.star-icon { 
+	right: 70px; 
+	z-index: 2 
+}
+
+
+/* Responsive styles for CTA Banner */
+@media only screen and (max-width: 1200px) {
+	.cta-banner { padding: 80px 0 104px 100px }
+
+	.cta-banner h3 {
+		font-size: 40px;
+		line-height: 50px;
+	}
+}
+
+@media only screen and (max-width: 998px) {
+	.cta-banner { 
+		padding-bottom: 0;
+		background-image:  none; 
+	}
+
+	.mobile-view-section { display: block }
+}
+
+@media only screen and (max-width: 768px) {
+	.cta-banner { 
+		padding: 50px 0 0 20px;
+		text-align: center; 
+	}
+
+	.cta-banner h3 {
+		font-size: 30px;
+		line-height: 38px;
+	}
+
+	.cta-banner a {
+		padding: 16px 10px 16px 24px;
+		margin: 24px;
+		font-size: 16px;
+		line-height: 24px;
+	}
 }
