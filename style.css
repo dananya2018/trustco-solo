@@ -672,14 +672,17 @@ nav li a.active { color: var(--secondary)}
 
 .meet-founder-text-content a {
 	border: 1px solid transparent;
-	padding: 22px 16px 22px 24px;
+	padding: 18px 16px 18px 24px;
 	margin-top: 82px;
 	display: inline-block;
+	font-size: 18px;
+	line-height: 28px;
 }
 
 .meet-founder-text-content a:hover { border: 1px solid var(--secondary) }
 
 .meet-founder-text-content a img { 
+	width: 24px;
 	margin-left: 25px;
 	vertical-align: middle;
 }
@@ -699,6 +702,75 @@ nav li a.active { color: var(--secondary)}
     right: 73px;
     transform: translateY(-50%);
 	z-index: -1;
+}
+
+/* Responsive styles for meet our founder */
+@media only screen and (max-width: 1163px) {
+	.meet-founder-text-content h3 { 
+		font-size: 45px;
+		line-height: 60px;
+	}
+
+	.meet-founder-text-content q { margin: 22px 0 }
+	.meet-founder-text-content a { margin-top: 50px }
+}
+
+@media only screen and (max-width: 1045px) {
+	.meet-founder-text-content h3 { 
+		font-size: 38px;
+		line-height: 40px;
+	}
+}
+
+@media only screen and (max-width: 998px) {
+	.meet-founder { 
+		margin: 50px 0 100px;
+		flex-direction: column;
+		text-align: center;
+	}
+
+	.meet-founder-text-content { margin: 0 50px }
+	.meet-founder-img-content { margin: 0 auto }
+	.meet-founder-img-content div img:first-of-type { left: 0 }
+}
+
+@media only screen and (max-width: 768px) {
+	.meet-founder-text-content { margin: 0 20px }
+}
+
+@media only screen and (max-width: 558px) {
+	.meet-founder-img-content > img { width: 100% }
+
+	.meet-founder h3 {
+		font-size: 30px;
+		line-height: 38px;
+	}
+
+	.meet-founder q {
+		margin: 16px 0;
+		font-size: 16px;
+		line-height: 24px;
+	}
+
+	.founder-details span:first-of-type {
+		font-size: 16px;
+		line-height: 24px;
+	}
+	
+	.founder-details span:last-of-type {
+		font-size: 12px;
+		line-height: 18px;
+	}
+
+	.meet-founder-text-content a { margin-top: 32px }
+}
+
+@media only screen and (max-width: 440px) {
+	.meet-founder-img-content div img:last-of-type { right: 50px }
+}
+
+@media only screen and (max-width: 400px) {
+	.meet-founder-img-content div img:last-of-type { right: 40px }
 }
 
 
