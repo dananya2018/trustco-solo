@@ -381,13 +381,13 @@ nav li a.active { color: var(--secondary)}
 	line-height: 30px;
 }
 
-.card-group { 
+.benefits .card-group { 
 	margin-left: 64px;
 	display: flex;
 	align-items: flex-start;
 }
 
-.card {
+.benefits .card {
 	box-sizing: border-box;
 	width: 100%;
 	padding: 32px 24px;
@@ -396,9 +396,9 @@ nav li a.active { color: var(--secondary)}
 	background: #F2F5F6;
 }
 
-.card:last-of-type { margin-right: 0 }
+.benefits .card:last-of-type { margin-right: 0 }
 
-.card h4 {
+.benefits .card h4 {
 	margin: 32px 0 10px;
 	color: var(--primary);
 	font-size: 24px;
@@ -406,7 +406,7 @@ nav li a.active { color: var(--secondary)}
 	line-height: 32px;
 }
 
-.card p {
+.benefits .card p {
 	color: #404040;
 	font-size: 18px;
 	line-height: 28px;
@@ -419,15 +419,15 @@ nav li a.active { color: var(--secondary)}
 	}
 
 	.benefits div { text-align: center }
-	.card-group { margin: 32px 0 0 }
+	.benefits .card-group { margin: 32px 0 0 }
 }
 
 @media only screen and (max-width: 768px) {
 	.benefits { margin: 50px 0 }
 	.benefits div h3 { margin: 16px 0 }
-	.card-group { flex-wrap: wrap }
-	.card { margin: 16px 0 0 }
-	.card:first-of-type { margin-top: 0 }
+	.benefits .card-group { flex-wrap: wrap }
+	.benefits .card { margin: 16px 0 0 }
+	.benefits .card:first-of-type { margin-top: 0 }
 }
 
 @media only screen and (max-width: 576px) {
@@ -447,7 +447,7 @@ nav li a.active { color: var(--secondary)}
 		line-height: 20px;
 	}
 
-	.card h4 {
+	.benefits .card h4 {
 		font-size: 20px;
 		line-height: 30px;
 	}
@@ -774,3 +774,87 @@ nav li a.active { color: var(--secondary)}
 	.building-bridge-text-content a { padding: 16px 13px 16px 22px }
  }
 
+ /* Testimonial styles */
+ .testimonial {
+	padding: 100px 150px;
+	background-color: #F2F5F6;
+ }
+
+ .testimonial h3 { color: var(--primary) }
+
+ .heading-and-sell-all-section { 
+	display: flex; 
+	align-items: center;
+	justify-content: space-between;
+}
+
+ .heading-and-sell-all-section a {
+	color: var(--primary);
+	font-size: 18px;
+	font-weight: 700;
+	line-height: 28px;
+ }
+
+ .heading-and-sell-all-section a:hover { text-decoration: underline }
+ .heading-and-sell-all-section a img { margin-left: 20px }
+
+.testimonial .card-group { 
+	margin: 64px 0;
+	display: flex;
+}
+
+ .testimonial .card {
+	width: 554px;
+	padding: 24px;
+	border-radius: 16px;
+	margin-right: 32px;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: space-between;
+	background-color: #fff;
+	box-shadow: 0px 1px 2px 0px #00000014;
+ }
+
+ .testimonial .card:last-of-type { margin-right: 0 }
+
+ .testimonial .card p {
+	margin: 24px 0; 
+	color: var(--primary);
+	font-size: 24px;
+	line-height: 32px;
+ }
+
+ .customer-details {
+	display: flex;
+ }
+
+ .customer-details div { margin-left: 12px }
+
+ .customer-details h5 {
+	color: #000;
+	font-size: 16px;
+	font-weight: 700;
+	line-height: 24px;
+ }
+
+ .customer-details span {
+	color: #404040;
+	font-size: 16px;
+	line-height: 24px;
+ }
+
+ .pagination { text-align: center }
+
+ .pagination span {
+	width: 20px;
+	height: 12px;
+	border-radius: 10px;
+	display: inline-block;
+	background-color: #D7E0E5;	
+ }
+
+ .pagination span:nth-child(2) {
+	width: 80px;
+	background-color: var(--secondary);
+ }
