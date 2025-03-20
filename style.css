@@ -919,3 +919,81 @@ nav li a.active { color: var(--secondary)}
  @media only screen and (max-width: 456px) {
 	.pagination { top: 200px }
  }
+
+/* Whats new styles */
+.whats-new {
+	margin: 100px 0;
+	position: relative;
+}
+
+.whats-new h3 { 
+	padding: 0 10%;
+	color: var(--primary) 
+}
+
+.whats-new > a {
+	position: absolute;
+	top: 20px;
+	right: 10%;
+	color: var(--primary);
+	font-size: 18px;
+	font-weight: 700;
+	line-height: 28px;
+ }
+
+.whats-new .card-group {
+	display: flex;
+	margin: 64px 10% 0;
+}
+
+.whats-new .card {
+	border: 1px solid #F2F5F6;
+	border-radius: 8px;
+	margin-right: 32px;
+	box-shadow: 0px 1px 2px 0px #00000014;
+}
+
+.whats-new .card:last-of-type { margin-right: 0 }
+
+.whats-new .card:nth-child(2n) {
+	background-color: #fff;
+	box-shadow: 0px 50px 80px 0px #043A5312;
+}
+
+.whats-new .card > div {
+	padding: 16px 25px 24px;
+}
+
+.whats-new .card > div div span {
+	font-size: 16px;
+	line-height: 24px;
+}
+
+.whats-new .card > div div span:first-of-type {
+	color: #000;;
+	font-weight: 700;
+}
+
+.whats-new .card > div div span:last-of-type { color: #404040 }
+
+.whats-new .card h4 {
+	margin: 16px 0 8px;
+	font-size: 24px;
+	font-weight: 700;
+	line-height: 32px;
+}
+
+.whats-new .card p {
+	margin-bottom: 16px;
+	color: #404040
+	font-size: 18px;
+	line-height: 28px;
+}
+
+.whats-new .card a {
+	margin-right: 16px;
+	color: var(--primary);
+	font-size: 18px;
+	font-weight: 700;
+	line-height: 28px;
+}
