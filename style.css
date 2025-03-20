@@ -862,6 +862,7 @@ nav li a.active { color: var(--secondary)}
 	background-color: var(--secondary);
  }
 
+ /* Responsive styles for Testimonial */
  @media only screen and (max-width: 1200px) {
 	.testimonial h3 { 
 		font-size: 45px; 
@@ -933,7 +934,7 @@ nav li a.active { color: var(--secondary)}
 
 .whats-new > a {
 	position: absolute;
-	top: 20px;
+	top: 22px;
 	right: 10%;
 	color: var(--primary);
 	font-size: 18px;
@@ -941,12 +942,16 @@ nav li a.active { color: var(--secondary)}
 	line-height: 28px;
  }
 
+ .whats-new > a img { margin-left: 15px }
+
 .whats-new .card-group {
+	margin-top: 64px;
 	display: flex;
-	margin: 64px 10% 0;
+	justify-content: center;
 }
 
 .whats-new .card {
+	width: 358px;
 	border: 1px solid #F2F5F6;
 	border-radius: 8px;
 	margin-right: 32px;
@@ -991,9 +996,53 @@ nav li a.active { color: var(--secondary)}
 }
 
 .whats-new .card a {
-	margin-right: 16px;
 	color: var(--primary);
 	font-size: 18px;
 	font-weight: 700;
 	line-height: 28px;
+}
+
+.whats-new .card a img { margin-left: 16px }
+
+/* responsive styles for what's new */
+@media only screen and (max-width: 1160px) {
+	.whats-new .card-group { overflow: scroll }
+	.whats-new h3 { text-align: center }
+
+	.whats-new > a {
+		top: 106%;
+		right: 43%;
+	}
+}
+
+@media only screen and (max-width: 768px) {
+	.whats-new { margin: 50px 0  110px}
+
+	.whats-new h3 {
+		font-size: 30px;
+		line-height: 38px;
+	}
+
+	.whats-new .card-group { margin-top: 32px }
+
+	.whats-new .card > div div span {
+		font-size: 12px;
+		line-height: 18px;
+	}
+
+	.whats-new .card h4 {
+		margin: 8px 0;
+		font-size: 18px;
+		line-height: 28px;
+	}
+
+	.whats-new .card a {
+		font-size: 14px;
+		line-height: 20px;
+	}
+}
+
+@media only screen and (max-width: 576px) {
+	.whats-new .card { width: 288px }
+	.whats-new .card > img { width: 100% }
 }
