@@ -1266,3 +1266,73 @@ footer p {
 
 	.site-credits ul { margin: 32px 0 }
 }
+
+/* CONTACT PAGE STYLES */
+
+/* We are here to help styles */
+.here-to-help {
+	padding: 93px 10%;
+	background: #F2F5F6;
+}
+
+.here-to-help h2 {
+	color: var(--primary);
+	font-size: 80px;
+	font-weight: 800;
+	line-height: 100%;
+}
+
+.here-to-help div p {
+	padding: 0 19%;
+	margin: 16px 0 32px;
+	color: var(--primary);
+	font-size: 20px;
+	font-weight: 500;
+	line-height: 32px;
+}
+
+.here-to-help .card-group {
+	display: flex;
+}
+
+.here-to-help .card {
+	width: 359px;
+	padding: 24px;
+	border-radius: 16px;
+	margin-right: 32px;
+	display: flex;
+    flex-direction: column;
+	align-items: flex-start;
+    flex-grow: 1;
+	background-color: #fff;
+}
+
+.here-to-help .card:last-of-type { margin-right: 0 }
+
+.here-to-help .card h4 {
+	margin: 32px 0 15px;
+	color: var(--primary);
+	font-size: 24px;
+	font-weight: 700;
+	line-height: 32px;
+}
+
+.here-to-help .card p {
+	margin-bottom: 61px;
+	color: #404040;
+	font-size: 18px;
+	line-height: 32px;
+}
+
+.here-to-help .card a {
+	margin-top: auto;  
+	display: block;
+	color: var(--secondary);
+	font-size: 18px;
+	line-height: 100%;
+}
+
+.here-to-help .card a img {
+	margin-left: 10px;
+	vertical-align: middle;
+}
