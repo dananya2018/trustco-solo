@@ -1337,6 +1337,35 @@ footer p {
 	vertical-align: middle;
 }
 
+/* Responsive styles for we are here to help */
+@media only screen and (max-width: 997px) {
+	.here-to-help { 
+		padding: 93px 20px;
+		background-color: #fff; 
+	}
+
+	.here-to-help .card-group { flex-wrap: wrap }
+	.here-to-help .card { margin: 0 0 32px 0 }
+	.here-to-help .card:last-of-type { margin-bottom: 0 }
+}
+
+@media only screen and (max-width: 768px) {
+	.here-to-help h2 { font-size: 60px }
+}
+
+@media only screen and (max-width: 576px) {
+	.here-to-help { padding: 40px 20px }	
+	.here-to-help h2 { font-size: 32px }
+
+	.here-to-help div p { 
+		font-size: 16px;
+		line-height: 24px; 
+	}
+
+	.here-to-help .card { padding: 0 }
+}
+
+
 /* Contact us form styles */
 .contact-us {
 	padding: 100px 120px;
