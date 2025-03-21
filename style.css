@@ -1207,7 +1207,11 @@ footer p {
 }
 
 @media only screen and (max-width: 998px) {
-	.primary-footer { flex-direction: column }
+	.primary-footer { 
+		margin: 50px 0;
+		flex-direction: column; 
+	}
+
 	.footer-logo-container { text-align: center }
 	.footer-logo-container ul { margin-top: 30px }
 	.social-icons-container { justify-content: center }
@@ -1365,7 +1369,6 @@ footer p {
 	.here-to-help .card { padding: 0 }
 }
 
-
 /* Contact us form styles */
 .contact-us {
 	padding: 100px 120px;
@@ -1505,4 +1508,28 @@ textarea {
 	color: #fff;
 	background-color: var(--secondary);
 	font-weight: 800;
+  }
+
+  @media only screen and (max-width: 997px) {
+	.contact-us { padding: 100px 20px }
+  }
+
+  @media only screen and (max-width: 768px) {
+	.contact-us { padding: 40px 20px }
+	.contact-us h2 { font-size: 32px }
+	.contact-us p { font-size: 16px }
+	form { padding: 0 }
+  }
+
+  @media only screen and (max-width: 576px) {
+	form > div { flex-direction: column }
+
+	.input-box {
+		box-sizing: border-box; 
+		width: 100%;
+		margin-right: 0 
+	}
+
+	.checkbox-and-button-container button { margin-top: 20px }
+	.checkbox-and-button-container button { width: 100% }
   }
