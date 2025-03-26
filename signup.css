@@ -39,12 +39,12 @@ h4 {
 }
 
 label { font-size: 14px }
-.form-control.success input { border-color: green }
-.form-control.error input { border-color: red }
+.form-control.success input { border: 2px solid green }
+.form-control.error input { border: 2px solid red }
 
 .form-control i {
   position: absolute;
-  top: 55%;
+  top: 70%;
   right: 50px;
   visibility: hidden;
 }
@@ -92,8 +92,14 @@ input::placeholder { font-size: 12px }
   border: none;
   margin-top: 50px;
   background-image: linear-gradient(to right, rgb(240, 183, 63, 0.9), rgba(245, 246, 242, 1));
+  cursor: pointer;
   font-size: 16px;
   text-transform: uppercase;
+}
+
+.btn, .btn:hover, .btn:active, .btn:focus {
+  border: none;
+  outline: 0;
 }
 
 /* Responsive styles for sign up form */
